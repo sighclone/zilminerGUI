@@ -1,0 +1,11 @@
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\zilminerGUI.pdb
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\clrcompression.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\clrjit.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\coreclr.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\mscordaccore.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\D3DCompiler_47_cor3.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\PenImc_cor3.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\PresentationNative_cor3.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\vcruntime140_cor3.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\wpfgfx_cor3.dll
+C:\Users\sadhu\Source\Repos\zilminerGUI\bin\publish\zilminerGUI.exe

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "aU1TZz2Xu5WbQScCqy6Y7LvulzualH9o9j1BRt6D6rfnqFd+iaeXCEx6nZdw8ZlSpR2kB6YB6bc4FnhP6mH8jg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sadhu\\Source\\Repos\\zilminerGUI\\zilminerGUI.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sadhu\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\5.0.7\\microsoft.netcore.app.runtime.win-x86.5.0.7.nupkg.sha512",
+    "C:\\Users\\sadhu\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\5.0.7\\microsoft.windowsdesktop.app.runtime.win-x86.5.0.7.nupkg.sha512",
+    "C:\\Users\\sadhu\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\5.0.7\\microsoft.aspnetcore.app.runtime.win-x86.5.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
