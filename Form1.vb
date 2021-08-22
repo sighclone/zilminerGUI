@@ -1,6 +1,4 @@
-﻿Imports System.IO
-
-Public Class Form1
+﻿Public Class Form1
     Private Sub closeWindow_Click(sender As Object, e As EventArgs) Handles closeWindow.Click
         Me.Close()
     End Sub
@@ -14,6 +12,7 @@ Public Class Form1
     End Sub
 
     Dim dirloc As String = ""
+    Dim stoploc As String = ""
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim file As New OpenFileDialog
@@ -21,7 +20,8 @@ Public Class Form1
         Dim result As DialogResult = file.ShowDialog()
         If result = Windows.Forms.DialogResult.OK Then
             dirloc = file.FileName.ToString
-            MessageBox.Show("You have chosen " + dirloc + " as the bat file!" + Environment.NewLine + "Just double checking...", "Batch file confirmation")
+            MessageBox.Show("You have chosen " + dirloc + " as the start file!" + Environment.NewLine + "Just double checking...", "Batch file confirmation")
+            dirconf.Text = "file selection done!"
         End If
     End Sub
 
@@ -52,7 +52,7 @@ Public Class Form1
             Dim port As String = TextBox2.Text
             Dim worker As String = TextBox4.Text
             pro.Increment(25)
-            Dim zilcmd As String = "--pow-start " + dirloc + " --pow-end " + dirloc + " -P zil://" + wallet + "." + worker + "@" + URL + ":" + port
+            Dim zilcmd As String = "--pow-start " + dirloc + " --pow-end " + stoploc + " " + DAGstatus + " " + " -P zil://" + wallet + "." + worker + "@" + URL + ":" + port
             pro.Increment(25)
             Process.Start("savefiles/zilminer.exe", zilcmd)
             pro.Increment(25)
@@ -72,7 +72,7 @@ Public Class Form1
             Dim port As String = TextBox2.Text
             Dim worker As String = TextBox4.Text
             pro.Increment(25)
-            Dim zilcmd As String = " -P zil://" + wallet + "." + worker + "@" + URL + ":" + port + " --report-hr=1 --work-timeout=99998 --retry-delay=998 --farm-retries=99998"
+            Dim zilcmd As String = " " + DAGstatus + " -P zil://" + wallet + "." + worker + "@" + URL + ":" + port + " --report-hr=1 --work-timeout=99998 --retry-delay=998 --farm-retries=99998"
             pro.Increment(25)
             Process.Start("savefiles/zilminer.exe", zilcmd)
             pro.Increment(25)
@@ -84,7 +84,7 @@ Public Class Form1
     End Sub
 
     Private Sub meta_Click(sender As Object, e As EventArgs) Handles meta.Click
-        MessageBox.Show("This program is made by:" + Environment.NewLine + Environment.NewLine + "github.com/sighclone" + Environment.NewLine + "Donate: zil1fzkshmcu7ud7s2k8ct6pkffntet9700kfh8gf2" + Environment.NewLine + Environment.NewLine + "NOTE: This is not zilminer nor is zilminer integrated into this! This is only a GUI that starts zilminer. So, feel free to close this window once zilminer starts.", "Meta")
+        MessageBox.Show("This program is made by:" + Environment.NewLine + Environment.NewLine + "github.com/sighclone" + Environment.NewLine + "Donate: zil1fzkshmcu7ud7s2k8ct6pkffntet9700kfh8gf2" + Environment.NewLine + Environment.NewLine + "NOTE: This is not zilminer nor is zilminer integrated into this! This is only a GUI that operates zilminer. So, feel free to close this window once zilminer starts.", "Meta")
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -100,5 +100,32 @@ Public Class Form1
         Catch ex As Exception
         End Try
         pro.Value = 0
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim file As New OpenFileDialog
+        file.Filter = "BAT file (*.bat)|*.bat"
+        Dim result As DialogResult = file.ShowDialog()
+        If result = Windows.Forms.DialogResult.OK Then
+            stoploc = file.FileName.ToString
+            MessageBox.Show("You have chosen " + stoploc + " as the stop file!" + Environment.NewLine + "Just double checking...", "Batch file confirmation")
+            dirconf.Text = "file selection done!"
+        End If
+    End Sub
+
+    Dim checkDAG As Boolean = False
+    Dim DAGstatus As String = ""
+    Private Sub DAGClearButton_Click(sender As Object, e As EventArgs) Handles DAGClearButton.Click
+        If checkDAG = False Then
+            DAGClearButton.Text = "My GPU's memory is sufficient!"
+            DAGClearStatus.Text = "DAG clearing enabled"
+            DAGstatus = "--clear-dag"
+            checkDAG = True
+        Else
+            DAGClearButton.Text = "My GPU's memory is insufficient!"
+            DAGClearStatus.Text = "DAG clearing disabled"
+            DAGstatus = ""
+            checkDAG = False
+        End If
     End Sub
 End Class

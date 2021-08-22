@@ -16,11 +16,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sadhu\\Source\\Repos\\zilminerGUI\\zilminerGUI.vbproj",
+      "projectUniqueName": "C:\\Users\\sadhu\\Desktop\\zilminerGUIv2\\zilminerGUI.vbproj",
       "projectName": "zilminerGUI",
-      "projectPath": "C:\\Users\\sadhu\\Source\\Repos\\zilminerGUI\\zilminerGUI.vbproj",
+      "projectPath": "C:\\Users\\sadhu\\Desktop\\zilminerGUIv2\\zilminerGUI.vbproj",
       "packagesPath": "C:\\Users\\sadhu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sadhu\\Source\\Repos\\zilminerGUI\\obj\\",
+      "outputPath": "C:\\Users\\sadhu\\Desktop\\zilminerGUIv2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -73,7 +73,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
       }
     }
   }

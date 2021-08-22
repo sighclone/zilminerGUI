@@ -47,6 +47,11 @@ Partial Class Form1
         Me.startSingle = New System.Windows.Forms.Button()
         Me.meta = New System.Windows.Forms.Button()
         Me.ZilliqaLogo = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.dirconf = New System.Windows.Forms.Label()
+        Me.stopconf = New System.Windows.Forms.Label()
+        Me.DAGClearButton = New System.Windows.Forms.Button()
+        Me.DAGClearStatus = New System.Windows.Forms.Label()
         CType(Me.ZilliqaLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -80,9 +85,9 @@ Partial Class Form1
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 104)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(339, 26)
+        Me.Label1.Size = New System.Drawing.Size(361, 26)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "1. Where is the other miner's .bat file?"
+        Me.Label1.Text = "1. Where are the other miner's .bat files?"
         '
         'Button1
         '
@@ -93,9 +98,9 @@ Partial Class Form1
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(11, 133)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(650, 109)
+        Me.Button1.Size = New System.Drawing.Size(324, 109)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Locate file..."
+        Me.Button1.Text = "Locate start file..."
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Label2
@@ -236,7 +241,7 @@ Partial Class Form1
         Me.startDual.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.startDual.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.startDual.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.startDual.Location = New System.Drawing.Point(11, 581)
+        Me.startDual.Location = New System.Drawing.Point(11, 633)
         Me.startDual.Name = "startDual"
         Me.startDual.Size = New System.Drawing.Size(147, 101)
         Me.startDual.TabIndex = 18
@@ -245,7 +250,7 @@ Partial Class Form1
         '
         'pro
         '
-        Me.pro.Location = New System.Drawing.Point(11, 688)
+        Me.pro.Location = New System.Drawing.Point(11, 740)
         Me.pro.Name = "pro"
         Me.pro.Size = New System.Drawing.Size(653, 43)
         Me.pro.TabIndex = 19
@@ -257,7 +262,7 @@ Partial Class Form1
         Me.switchSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.switchSingle.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.switchSingle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.switchSingle.Location = New System.Drawing.Point(164, 581)
+        Me.switchSingle.Location = New System.Drawing.Point(164, 633)
         Me.switchSingle.Name = "switchSingle"
         Me.switchSingle.Size = New System.Drawing.Size(147, 101)
         Me.switchSingle.TabIndex = 20
@@ -271,7 +276,7 @@ Partial Class Form1
         Me.switchDual.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.switchDual.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.switchDual.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.switchDual.Location = New System.Drawing.Point(317, 581)
+        Me.switchDual.Location = New System.Drawing.Point(317, 633)
         Me.switchDual.Name = "switchDual"
         Me.switchDual.Size = New System.Drawing.Size(147, 101)
         Me.switchDual.TabIndex = 21
@@ -285,7 +290,7 @@ Partial Class Form1
         Me.startSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.startSingle.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.startSingle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.startSingle.Location = New System.Drawing.Point(470, 581)
+        Me.startSingle.Location = New System.Drawing.Point(470, 633)
         Me.startSingle.Name = "startSingle"
         Me.startSingle.Size = New System.Drawing.Size(147, 101)
         Me.startSingle.TabIndex = 22
@@ -299,7 +304,7 @@ Partial Class Form1
         Me.meta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.meta.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.meta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.meta.Location = New System.Drawing.Point(623, 581)
+        Me.meta.Location = New System.Drawing.Point(623, 633)
         Me.meta.Name = "meta"
         Me.meta.Size = New System.Drawing.Size(41, 101)
         Me.meta.TabIndex = 23
@@ -319,12 +324,78 @@ Partial Class Form1
         Me.ZilliqaLogo.TabIndex = 24
         Me.ZilliqaLogo.TabStop = False
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Aqua
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(341, 133)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(320, 109)
+        Me.Button2.TabIndex = 25
+        Me.Button2.Text = "Locate stop file..."
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'dirconf
+        '
+        Me.dirconf.AutoSize = True
+        Me.dirconf.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.dirconf.ForeColor = System.Drawing.Color.Silver
+        Me.dirconf.Location = New System.Drawing.Point(188, 245)
+        Me.dirconf.Name = "dirconf"
+        Me.dirconf.Size = New System.Drawing.Size(147, 26)
+        Me.dirconf.TabIndex = 26
+        Me.dirconf.Text = "file not selected"
+        '
+        'stopconf
+        '
+        Me.stopconf.AutoSize = True
+        Me.stopconf.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.stopconf.ForeColor = System.Drawing.Color.Silver
+        Me.stopconf.Location = New System.Drawing.Point(514, 245)
+        Me.stopconf.Name = "stopconf"
+        Me.stopconf.Size = New System.Drawing.Size(147, 26)
+        Me.stopconf.TabIndex = 27
+        Me.stopconf.Text = "file not selected"
+        '
+        'DAGClearButton
+        '
+        Me.DAGClearButton.BackColor = System.Drawing.Color.Aqua
+        Me.DAGClearButton.FlatAppearance.BorderSize = 0
+        Me.DAGClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DAGClearButton.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DAGClearButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.DAGClearButton.Location = New System.Drawing.Point(13, 584)
+        Me.DAGClearButton.Name = "DAGClearButton"
+        Me.DAGClearButton.Size = New System.Drawing.Size(451, 43)
+        Me.DAGClearButton.TabIndex = 28
+        Me.DAGClearButton.Text = "My GPU's memory is insufficient!"
+        Me.DAGClearButton.UseVisualStyleBackColor = False
+        '
+        'DAGClearStatus
+        '
+        Me.DAGClearStatus.AutoSize = True
+        Me.DAGClearStatus.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.DAGClearStatus.ForeColor = System.Drawing.Color.Silver
+        Me.DAGClearStatus.Location = New System.Drawing.Point(470, 594)
+        Me.DAGClearStatus.Name = "DAGClearStatus"
+        Me.DAGClearStatus.Size = New System.Drawing.Size(201, 26)
+        Me.DAGClearStatus.TabIndex = 29
+        Me.DAGClearStatus.Text = "DAG clearing disabled"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(674, 743)
+        Me.ClientSize = New System.Drawing.Size(674, 795)
+        Me.Controls.Add(Me.DAGClearStatus)
+        Me.Controls.Add(Me.DAGClearButton)
+        Me.Controls.Add(Me.stopconf)
+        Me.Controls.Add(Me.dirconf)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ZilliqaLogo)
         Me.Controls.Add(Me.meta)
         Me.Controls.Add(Me.startSingle)
@@ -352,7 +423,8 @@ Partial Class Form1
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "zilminerGUI"
         CType(Me.ZilliqaLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -383,4 +455,9 @@ Partial Class Form1
     Friend WithEvents startSingle As Button
     Friend WithEvents meta As Button
     Friend WithEvents ZilliqaLogo As PictureBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents dirconf As Label
+    Friend WithEvents stopconf As Label
+    Friend WithEvents DAGClearButton As Button
+    Friend WithEvents DAGClearStatus As Label
 End Class
