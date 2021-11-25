@@ -52,6 +52,7 @@ Partial Class Form1
         Me.stopconf = New System.Windows.Forms.Label()
         Me.DAGClearButton = New System.Windows.Forms.Button()
         Me.DAGClearStatus = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.ZilliqaLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -385,12 +386,26 @@ Partial Class Form1
         Me.DAGClearStatus.TabIndex = 29
         Me.DAGClearStatus.Text = "DAG clearing disabled"
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Aqua
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button3.Location = New System.Drawing.Point(556, 12)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(50, 53)
+        Me.Button3.TabIndex = 30
+        Me.Button3.Text = "―"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(674, 837)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.DAGClearStatus)
         Me.Controls.Add(Me.DAGClearButton)
         Me.Controls.Add(Me.stopconf)
@@ -460,4 +475,5 @@ Partial Class Form1
     Friend WithEvents stopconf As Label
     Friend WithEvents DAGClearButton As Button
     Friend WithEvents DAGClearStatus As Label
+    Friend WithEvents Button3 As Button
 End Class

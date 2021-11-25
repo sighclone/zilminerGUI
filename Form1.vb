@@ -1,4 +1,7 @@
 ﻿Public Class Form1
+
+    
+
     Private Sub closeWindow_Click(sender As Object, e As EventArgs) Handles closeWindow.Click
         Me.Close()
     End Sub
@@ -134,5 +137,32 @@
             DAGstatus = ""
             checkDAG = False
         End If
+    End Sub
+
+    Private isMouseDown As Boolean = False
+    Private mouseOffset As Point
+    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            mouseOffset = New Point(-e.X, -e.Y)
+            isMouseDown = True
+        End If
+    End Sub
+
+    Private Sub Form1_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
+        If isMouseDown Then
+            Dim mousePos As Point = Control.MousePosition
+            mousePos.Offset(mouseOffset.X, mouseOffset.Y)
+            Me.Location = mousePos
+        End If
+    End Sub
+
+    Private Sub Form1_MouseUp(sender As Object, e As MouseEventArgs) Handles MyBase.MouseUp
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            isMouseDown = False
+        End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class
