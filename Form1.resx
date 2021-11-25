@@ -57,8 +57,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="ZilliqaLogo.ErrorImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ZilliqaLogo.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXwAAAF8CAYAAADM5wDKAAAABGdBTUEAALGPC/xhBQAAbYdJREFUeF7t
         nQd8U+X6x5O0ZU/ZG2WLguIAQYSymjZt0zL0Ov5uQUTcE3HrVa/3qixxe916QVAQEWjTdCbpStNd9h6y
@@ -531,7 +531,7 @@
         erTYBgoK7wqN5v8B/oI2HcWi/3AAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="ZilliqaLogo.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ZilliqaLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXwAAAF8CAYAAADM5wDKAAAABGdBTUEAALGPC/xhBQAAbYdJREFUeF7t
         nQd8U+X6x5O0ZU/ZG2WLguIAQYSymjZt0zL0Ov5uQUTcE3HrVa/3qixxe916QVAQEWjTdCbpStNd9h6y
@@ -1004,7 +1004,7 @@
         erTYBgoK7wqN5v8B/oI2HcWi/3AAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="ZilliqaLogo.InitialImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ZilliqaLogo.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXwAAAF8CAYAAADM5wDKAAAABGdBTUEAALGPC/xhBQAAbYdJREFUeF7t
         nQd8U+X6x5O0ZU/ZG2WLguIAQYSymjZt0zL0Ov5uQUTcE3HrVa/3qixxe916QVAQEWjTdCbpStNd9h6y

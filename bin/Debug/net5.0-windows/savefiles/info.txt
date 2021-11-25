@@ -1,1 +1,1 @@
-﻿--pow-start  --pow-end  -P zil://.@:--pow-start  --pow-end  -P zil://.@:--pow-start  --pow-end  -P zil://.@:--pow-start  --pow-end  -P zil://.@:
+  -P zil://zil1fzkshmcu7ud7s2k8ct6pkffntet9700kfh8gf2.G731GTtest@as1-zil.shardpool.io:5000/api --report-hr=1 --work-timeout=99998 --retry-delay=998 --farm-retries=99998
