@@ -54,3 +54,4 @@ C:\Users\sadhu\Documents\GitHub\zilminerGUI\obj\Debug\net5.0-windows\zilminerGUI
 C:\Users\sadhu\Documents\GitHub\zilminerGUI\obj\Debug\net5.0-windows\ref\zilminerGUI.dll
 C:\Users\sadhu\Documents\GitHub\zilminerGUI\obj\Debug\net5.0-windows\zilminerGUI.pdb
 C:\Users\sadhu\Documents\GitHub\zilminerGUI\obj\Debug\net5.0-windows\zilminerGUI.genruntimeconfig.cache
+C:\Users\sadhu\Documents\GitHub\zilminerGUI\obj\Debug\net5.0-windows\zilminerGUI.vbproj.AssemblyReference.cache

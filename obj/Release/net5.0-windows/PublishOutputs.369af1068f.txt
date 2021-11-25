@@ -1,0 +1,5 @@
+C:\Users\sadhu\Documents\GitHub\zilminerGUI\bin\Release\net5.0-windows\publish\zilminerGUI.exe
+C:\Users\sadhu\Documents\GitHub\zilminerGUI\bin\Release\net5.0-windows\publish\zilminerGUI.dll
+C:\Users\sadhu\Documents\GitHub\zilminerGUI\bin\Release\net5.0-windows\publish\zilminerGUI.deps.json
+C:\Users\sadhu\Documents\GitHub\zilminerGUI\bin\Release\net5.0-windows\publish\zilminerGUI.runtimeconfig.json
+C:\Users\sadhu\Documents\GitHub\zilminerGUI\bin\Release\net5.0-windows\publish\zilminerGUI.pdb
